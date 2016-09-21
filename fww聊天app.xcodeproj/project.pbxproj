@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DB487D11D92A4F800028ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487D01D92A4F800028ECD /* main.m */; };
+		2DB487D41D92A4F800028ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487D31D92A4F800028ECD /* AppDelegate.m */; };
+		2DB487D71D92A4F800028ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487D61D92A4F800028ECD /* ViewController.m */; };
+		2DB487DA1D92A4F800028ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB487D81D92A4F800028ECD /* Main.storyboard */; };
+		2DB487DC1D92A4F800028ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB487DB1D92A4F800028ECD /* Assets.xcassets */; };
+		2DB487DF1D92A4F800028ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB487DD1D92A4F800028ECD /* LaunchScreen.storyboard */; };
+		2DB487EA1D92A4F800028ECD /* fww__appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487E91D92A4F800028ECD /* fww__appTests.m */; };
+		2DB487F51D92A4F800028ECD /* fww__appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487F41D92A4F800028ECD /* fww__appUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DB487E61D92A4F800028ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DB487C41D92A4F800028ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DB487CB1D92A4F800028ECD;
+			remoteInfo = "fww聊天app";
+		};
+		2DB487F11D92A4F800028ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DB487C41D92A4F800028ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DB487CB1D92A4F800028ECD;
+			remoteInfo = "fww聊天app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DB487CC1D92A4F800028ECD /* fww聊天app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fww聊天app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB487D01D92A4F800028ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DB487D21D92A4F800028ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DB487D31D92A4F800028ECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DB487D51D92A4F800028ECD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DB487D61D92A4F800028ECD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DB487D91D92A4F800028ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DB487DB1D92A4F800028ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DB487DE1D92A4F800028ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DB487E01D92A4F800028ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB487E51D92A4F800028ECD /* fww聊天appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fww聊天appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB487E91D92A4F800028ECD /* fww__appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fww__appTests.m; sourceTree = "<group>"; };
+		2DB487EB1D92A4F800028ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB487F01D92A4F800028ECD /* fww聊天appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fww聊天appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB487F41D92A4F800028ECD /* fww__appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fww__appUITests.m; sourceTree = "<group>"; };
+		2DB487F61D92A4F800028ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DB487C91D92A4F800028ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB487E21D92A4F800028ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB487ED1D92A4F800028ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DB487C31D92A4F800028ECD = {
+			isa = PBXGroup;
+			children = (
+				2DB487CE1D92A4F800028ECD /* fww聊天app */,
+				2DB487E81D92A4F800028ECD /* fww聊天appTests */,
+				2DB487F31D92A4F800028ECD /* fww聊天appUITests */,
+				2DB487CD1D92A4F800028ECD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DB487CD1D92A4F800028ECD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DB487CC1D92A4F800028ECD /* fww聊天app.app */,
+				2DB487E51D92A4F800028ECD /* fww聊天appTests.xctest */,
+				2DB487F01D92A4F800028ECD /* fww聊天appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DB487CE1D92A4F800028ECD /* fww聊天app */ = {
+			isa = PBXGroup;
+			children = (
+				2DB487D21D92A4F800028ECD /* AppDelegate.h */,
+				2DB487D31D92A4F800028ECD /* AppDelegate.m */,
+				2DB487D51D92A4F800028ECD /* ViewController.h */,
+				2DB487D61D92A4F800028ECD /* ViewController.m */,
+				2DB487D81D92A4F800028ECD /* Main.storyboard */,
+				2DB487DB1D92A4F800028ECD /* Assets.xcassets */,
+				2DB487DD1D92A4F800028ECD /* LaunchScreen.storyboard */,
+				2DB487E01D92A4F800028ECD /* Info.plist */,
+				2DB487CF1D92A4F800028ECD /* Supporting Files */,
+			);
+			path = "fww聊天app";
+			sourceTree = "<group>";
+		};
+		2DB487CF1D92A4F800028ECD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DB487D01D92A4F800028ECD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DB487E81D92A4F800028ECD /* fww聊天appTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DB487E91D92A4F800028ECD /* fww__appTests.m */,
+				2DB487EB1D92A4F800028ECD /* Info.plist */,
+			);
+			path = "fww聊天appTests";
+			sourceTree = "<group>";
+		};
+		2DB487F31D92A4F800028ECD /* fww聊天appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DB487F41D92A4F800028ECD /* fww__appUITests.m */,
+				2DB487F61D92A4F800028ECD /* Info.plist */,
+			);
+			path = "fww聊天appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DB487CB1D92A4F800028ECD /* fww聊天app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB487F91D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天app" */;
+			buildPhases = (
+				2DB487C81D92A4F800028ECD /* Sources */,
+				2DB487C91D92A4F800028ECD /* Frameworks */,
+				2DB487CA1D92A4F800028ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fww聊天app";
+			productName = "fww聊天app";
+			productReference = 2DB487CC1D92A4F800028ECD /* fww聊天app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DB487E41D92A4F800028ECD /* fww聊天appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB487FC1D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天appTests" */;
+			buildPhases = (
+				2DB487E11D92A4F800028ECD /* Sources */,
+				2DB487E21D92A4F800028ECD /* Frameworks */,
+				2DB487E31D92A4F800028ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DB487E71D92A4F800028ECD /* PBXTargetDependency */,
+			);
+			name = "fww聊天appTests";
+			productName = "fww聊天appTests";
+			productReference = 2DB487E51D92A4F800028ECD /* fww聊天appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DB487EF1D92A4F800028ECD /* fww聊天appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB487FF1D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天appUITests" */;
+			buildPhases = (
+				2DB487EC1D92A4F800028ECD /* Sources */,
+				2DB487ED1D92A4F800028ECD /* Frameworks */,
+				2DB487EE1D92A4F800028ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DB487F21D92A4F800028ECD /* PBXTargetDependency */,
+			);
+			name = "fww聊天appUITests";
+			productName = "fww聊天appUITests";
+			productReference = 2DB487F01D92A4F800028ECD /* fww聊天appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DB487C41D92A4F800028ECD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = fengwenwei;
+				TargetAttributes = {
+					2DB487CB1D92A4F800028ECD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5P4PSM8S8X;
+					};
+					2DB487E41D92A4F800028ECD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5P4PSM8S8X;
+						TestTargetID = 2DB487CB1D92A4F800028ECD;
+					};
+					2DB487EF1D92A4F800028ECD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5P4PSM8S8X;
+						TestTargetID = 2DB487CB1D92A4F800028ECD;
+					};
+				};
+			};
+			buildConfigurationList = 2DB487C71D92A4F800028ECD /* Build configuration list for PBXProject "fww聊天app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DB487C31D92A4F800028ECD;
+			productRefGroup = 2DB487CD1D92A4F800028ECD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DB487CB1D92A4F800028ECD /* fww聊天app */,
+				2DB487E41D92A4F800028ECD /* fww聊天appTests */,
+				2DB487EF1D92A4F800028ECD /* fww聊天appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DB487CA1D92A4F800028ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB487DF1D92A4F800028ECD /* LaunchScreen.storyboard in Resources */,
+				2DB487DC1D92A4F800028ECD /* Assets.xcassets in Resources */,
+				2DB487DA1D92A4F800028ECD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB487E31D92A4F800028ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB487EE1D92A4F800028ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DB487C81D92A4F800028ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB487D71D92A4F800028ECD /* ViewController.m in Sources */,
+				2DB487D41D92A4F800028ECD /* AppDelegate.m in Sources */,
+				2DB487D11D92A4F800028ECD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB487E11D92A4F800028ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB487EA1D92A4F800028ECD /* fww__appTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB487EC1D92A4F800028ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB487F51D92A4F800028ECD /* fww__appUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DB487E71D92A4F800028ECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DB487CB1D92A4F800028ECD /* fww聊天app */;
+			targetProxy = 2DB487E61D92A4F800028ECD /* PBXContainerItemProxy */;
+		};
+		2DB487F21D92A4F800028ECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DB487CB1D92A4F800028ECD /* fww聊天app */;
+			targetProxy = 2DB487F11D92A4F800028ECD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DB487D81D92A4F800028ECD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DB487D91D92A4F800028ECD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DB487DD1D92A4F800028ECD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DB487DE1D92A4F800028ECD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DB487F71D92A4F800028ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DB487F81D92A4F800028ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DB487FA1D92A4F800028ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "fww聊天app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DB487FB1D92A4F800028ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "fww聊天app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2DB487FD1D92A4F800028ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "fww聊天appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fww聊天app.app/fww聊天app";
+			};
+			name = Debug;
+		};
+		2DB487FE1D92A4F800028ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "fww聊天appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fww聊天app.app/fww聊天app";
+			};
+			name = Release;
+		};
+		2DB488001D92A4F800028ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "fww聊天appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "fww聊天app";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2DB488011D92A4F800028ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "fww聊天appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "fww聊天app";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DB487C71D92A4F800028ECD /* Build configuration list for PBXProject "fww聊天app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB487F71D92A4F800028ECD /* Debug */,
+				2DB487F81D92A4F800028ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DB487F91D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB487FA1D92A4F800028ECD /* Debug */,
+				2DB487FB1D92A4F800028ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DB487FC1D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB487FD1D92A4F800028ECD /* Debug */,
+				2DB487FE1D92A4F800028ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DB487FF1D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB488001D92A4F800028ECD /* Debug */,
+				2DB488011D92A4F800028ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DB487C41D92A4F800028ECD /* Project object */;
+}
