@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FwwLoginViewController.h
 //  fww聊天app
 //
 //  Created by fengwenwei on 16/9/21.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FwwLoginViewController : UIViewController
 
 @end
-
