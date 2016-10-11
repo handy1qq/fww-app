@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FwwTimeTool : NSObject
+
++ (NSString *)timeStr: (long long)timeInterval;
 
 @end

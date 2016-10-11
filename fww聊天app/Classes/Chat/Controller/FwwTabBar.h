@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FwwTabBar : NSObject
 
+- (void )setTabBar:(UITabBarController *)tabBarController;
 @end

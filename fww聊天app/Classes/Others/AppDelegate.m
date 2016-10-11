@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import  "EMSDKFull.h"
 #import "EMClientDelegate.h"
+#import "EMClientDelegate.h"
+#import <UIKit/UIKit.h>
 
 @interface AppDelegate ()<EMChatManagerDelegate,EMClientDelegate>
 
@@ -17,9 +19,17 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    AppDelegate *publicValue = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    publicValue.toFriend = @"";
+    
+    
+    
     EMOptions *options = [EMOptions optionsWithAppkey:@"1156160921115059#fwwchat"];
     options.apnsCertName = @"apnsCertName";
     [[EMClient sharedClient] initializeSDKWithOptions:options];
+    
+    [ [EMClient sharedClient] addDelegate:self delegateQueue:nil];
     
     BOOL isAutoLogin = [EMClient sharedClient].options.isAutoLogin;
     if (isAutoLogin) {
@@ -27,17 +37,65 @@
         [ [EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
         self.window.rootViewController = [UIStoryboard storyboardWithName:@"Chat" bundle:nil].instantiateInitialViewController;
     }
+//    BOOL isLoggedIn = [EMClient sharedClient].isLoggedIn;
+//    if (isLoggedIn) {
+//        /**设置tabBar */
+//        UITabBarController *tabBarController = (UITabBarController *) self.window.rootViewController;
+//        UITabBar *tabBar = tabBarController.tabBar;
+//        UIEdgeInsets insets = UIEdgeInsetsMake(3, 0, -3, 0);
+//        UITabBarItem *tabBarItem0 = [tabBar.items objectAtIndex:0];
+//        UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:1];
+//        UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:2];
+//        
+//        tabBarItem0.selectedImage = [UIImage imageNamed:@"phone183"];
+//        tabBarItem0.image = [ [UIImage imageNamed:@"phone183"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        tabBarItem0.title = @"好友信息";
+//        tabBarItem0.imageInsets = insets;
+//        
+//        tabBarItem1.selectedImage = [UIImage imageNamed:@"font-369"];
+//        tabBarItem1.image = [ [UIImage imageNamed:@"font-369"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        tabBarItem1.title = @"好友通讯录";
+//        
+//        tabBarItem2.selectedImage = [UIImage imageNamed:@"settings"];
+//        tabBarItem2.image = [ [UIImage imageNamed:@"settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        tabBarItem2.title = @"设置信息";
+//    }
     
    
+
+    
+    
+    
+    
+    
+    
+    
 //        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings
 //                                                                             settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge)
 //                                                                             categories:nil]];
 //
 //        [[UIApplication sharedApplication] registerForRemoteNotifications];
     
-   
+    //[ [EMClient sharedClient] uploadLogToServer];
        return YES;
 }
+
+- (void)dealloc {
+    [ [EMClient sharedClient].chatManager removeDelegate:self];
+
+
+}
+
+- (void)connectionStateDidChange:(EMConnectionState)aConnectionState {
+    
+        if (aConnectionState == EMConnectionConnected) {
+            NSLog(@"已经连接到网络");
+        } else if (aConnectionState == EMConnectionDisconnected) {
+            NSLog(@"已经断开连接到网络");
+        }
+
+}
+
 
 
 - (void)autoLoginDidCompleteWithError:(EMError *)aError {

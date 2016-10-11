@@ -11,9 +11,8 @@
 #import "EMSDK.h"
 #import "EMError.h"
 //#import "EMClient.h"
-#import "FwwUIAlertView.h"
 #import "AppDelegate.h"
-//#import "FwwChatViewController.h"
+#import "EMError.h"
 
 
 
@@ -21,19 +20,23 @@
 @property (weak, nonatomic) IBOutlet UITextField *userNameField;
 @property (weak, nonatomic) IBOutlet UITextField *passWordField;
 
-/**提示框 */
-@property (strong, nonatomic) FwwUIAlertView *alert;
-
 /**EMCline的对象 */
 @property (strong, nonatomic) EMClient *cline;
 
 /**Appdelegate */
 @property (strong, nonatomic) AppDelegate *app;
 
+@property (strong, nonatomic) IBOutlet UIButton *logIn;
 
+@property (strong, nonatomic) IBOutlet UIButton *registerB;
 @end
 
 @implementation FwwLoginViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.navigationController.navigationBarHidden = YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,7 +44,12 @@
     self.passWordField.delegate = self;
     self.passWordField.secureTextEntry = YES;
     
-    // Do any additional setup after loading the view.
+    self.userNameField.layer.cornerRadius = 5.0;
+    self.passWordField.layer.cornerRadius = 5.0;
+    self.logIn.layer.cornerRadius = 5.0;
+    self.registerB.layer.cornerRadius = 5.0;
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"] ];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -139,19 +147,12 @@
     }
 }
 
-- (IBAction)logout:(id)sender {
-    EMError *error = [[EMClient sharedClient] logout:YES];
-    if (!error) {
-        NSLog(@"退出成功");
-        [self titlestring:@"提示" messagestring:@"退出成功" surestring:@"确定"];
 
-    }
-}
+
 
 - (void)titlestring:(NSString *)titlestring messagestring: (NSString *)messagestring surestring: (NSString *)surestring {
     UIAlertView *alert = [ [UIAlertView alloc] initWithTitle:titlestring message:messagestring delegate:self cancelButtonTitle:nil otherButtonTitles:surestring, nil];
     [alert show];
     
 }
-
 @end

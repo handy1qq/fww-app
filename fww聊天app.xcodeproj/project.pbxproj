@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DB487D11D92A4F800028ECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487D01D92A4F800028ECD /* main.m */; };
-		2DB487D41D92A4F800028ECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487D31D92A4F800028ECD /* AppDelegate.m */; };
-		2DB487D71D92A4F800028ECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487D61D92A4F800028ECD /* ViewController.m */; };
-		2DB487DA1D92A4F800028ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB487D81D92A4F800028ECD /* Main.storyboard */; };
+		2D73E60F1DABD6B00016A8BF /* FwwTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D73E60E1DABD6B00016A8BF /* FwwTabBar.m */; };
+		2D73E6111DAC4DFA0016A8BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D73E6101DAC4DFA0016A8BF /* Images.xcassets */; };
+		2D8A4B871D96406600A3490E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A4B861D96406600A3490E /* AppDelegate.m */; };
+		2D8A4B901D9640FB00A3490E /* FwwLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A4B8F1D9640FB00A3490E /* FwwLoginViewController.m */; };
+		2D8A4B951D96416900A3490E /* FwwChatTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A4B941D96416900A3490E /* FwwChatTableTableViewController.m */; };
+		2D8A4BCA1D96426000A3490E /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8A4BC51D96426000A3490E /* libHyphenateFullSDK.a */; };
+		2D8A4BCB1D96426000A3490E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8A4BC71D96426000A3490E /* Chat.storyboard */; };
+		2D8A4BCC1D96426000A3490E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8A4BC81D96426000A3490E /* LaunchScreen.storyboard */; };
+		2D8A4BCD1D96426000A3490E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8A4BC91D96426000A3490E /* Login.storyboard */; };
+		2D8A4BE21D9644C900A3490E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D8A4BE01D9644C900A3490E /* Info.plist */; };
+		2D8A4BE31D9644C900A3490E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A4BE11D9644C900A3490E /* main.m */; };
+		2D8A4BE81D96551A00A3490E /* FwwAddFirendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A4BE71D96551A00A3490E /* FwwAddFirendViewController.m */; };
 		2DB487DC1D92A4F800028ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB487DB1D92A4F800028ECD /* Assets.xcassets */; };
-		2DB487DF1D92A4F800028ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB487DD1D92A4F800028ECD /* LaunchScreen.storyboard */; };
 		2DB487EA1D92A4F800028ECD /* fww__appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487E91D92A4F800028ECD /* fww__appTests.m */; };
 		2DB487F51D92A4F800028ECD /* fww__appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB487F41D92A4F800028ECD /* fww__appUITests.m */; };
+		2DB4882A1D92A6BF00028ECD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB488291D92A6BF00028ECD /* CoreMedia.framework */; };
+		2DB4882C1D92A6CE00028ECD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4882B1D92A6CE00028ECD /* AudioToolbox.framework */; };
+		2DB4882E1D92A6EA00028ECD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4882D1D92A6EA00028ECD /* AVFoundation.framework */; };
+		2DB488301D92A70000028ECD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4882F1D92A70000028ECD /* MobileCoreServices.framework */; };
+		2DB4885D1D92A79B00028ECD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4885C1D92A79B00028ECD /* ImageIO.framework */; };
+		2DB4885F1D92A7B600028ECD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB4885E1D92A7B600028ECD /* libz.tbd */; };
+		2DB488611D92A7CB00028ECD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB488601D92A7CB00028ECD /* libc++.tbd */; };
+		2DB488651D92A7EE00028ECD /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB488641D92A7EE00028ECD /* libstdc++.6.0.9.tbd */; };
+		2DB488671D92A7FD00028ECD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB488661D92A7FD00028ECD /* libsqlite3.tbd */; };
+		2DB488691D92B80100028ECD /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB488681D92B80100028ECD /* libiconv.tbd */; };
+		2DCDBDC51D9AE14D001DFD4E /* FwwSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCDBDC41D9AE14D001DFD4E /* FwwSettingViewController.m */; };
+		2DE9A9841DA53C9200A9F0A8 /* FwwTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9A9831DA53C9200A9F0A8 /* FwwTimeCell.m */; };
+		2DE9A9881DA5439F00A9F0A8 /* FwwTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9A9871DA5439F00A9F0A8 /* FwwTimeTool.m */; };
+		2DEDD7031D97A9C80049998A /* FwwAddressBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEDD7021D97A9C80049998A /* FwwAddressBookTableViewController.m */; };
+		2DEDD7091D97B61D0049998A /* FwwAcceptFirendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEDD7081D97B61D0049998A /* FwwAcceptFirendViewController.m */; };
+		2DF8D75C1D9C017200C77A96 /* FwwChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8D75B1D9C017200C77A96 /* FwwChatViewController.m */; };
+		2DF8D7601D9C1CEF00C77A96 /* FwwChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8D75F1D9C1CEF00C77A96 /* FwwChatCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +59,95 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D1D96F41D998ADB0006BE9E /* Fwwthinking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fwwthinking.m; sourceTree = "<group>"; };
+		2D73E60D1DABD6B00016A8BF /* FwwTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwTabBar.h; sourceTree = "<group>"; };
+		2D73E60E1DABD6B00016A8BF /* FwwTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwTabBar.m; sourceTree = "<group>"; };
+		2D73E6101DAC4DFA0016A8BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D8A4B851D96406600A3490E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D8A4B861D96406600A3490E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D8A4B8E1D9640FB00A3490E /* FwwLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwLoginViewController.h; sourceTree = "<group>"; };
+		2D8A4B8F1D9640FB00A3490E /* FwwLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwLoginViewController.m; sourceTree = "<group>"; };
+		2D8A4B931D96416800A3490E /* FwwChatTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwChatTableTableViewController.h; sourceTree = "<group>"; };
+		2D8A4B941D96416900A3490E /* FwwChatTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwChatTableTableViewController.m; sourceTree = "<group>"; };
+		2D8A4B9E1D96426000A3490E /* EMCallLocalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallLocalView.h; sourceTree = "<group>"; };
+		2D8A4B9F1D96426000A3490E /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallManagerDelegate.h; sourceTree = "<group>"; };
+		2D8A4BA01D96426000A3490E /* EMCallRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallRemoteView.h; sourceTree = "<group>"; };
+		2D8A4BA11D96426000A3490E /* EMCallSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallSession.h; sourceTree = "<group>"; };
+		2D8A4BA21D96426000A3490E /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatManagerDelegate.h; sourceTree = "<group>"; };
+		2D8A4BA31D96426000A3490E /* EMChatroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroom.h; sourceTree = "<group>"; };
+		2D8A4BA41D96426000A3490E /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
+		2D8A4BA51D96426000A3490E /* EMClient+Call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMClient+Call.h"; sourceTree = "<group>"; };
+		2D8A4BA61D96426000A3490E /* EMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClient.h; sourceTree = "<group>"; };
+		2D8A4BA71D96426000A3490E /* EMClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClientDelegate.h; sourceTree = "<group>"; };
+		2D8A4BA81D96426000A3490E /* EMCmdMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCmdMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BA91D96426000A3490E /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMContactManagerDelegate.h; sourceTree = "<group>"; };
+		2D8A4BAA1D96426000A3490E /* EMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConversation.h; sourceTree = "<group>"; };
+		2D8A4BAB1D96426000A3490E /* EMCursorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCursorResult.h; sourceTree = "<group>"; };
+		2D8A4BAC1D96426000A3490E /* EMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMError.h; sourceTree = "<group>"; };
+		2D8A4BAD1D96426000A3490E /* EMErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMErrorCode.h; sourceTree = "<group>"; };
+		2D8A4BAE1D96426000A3490E /* EMFileMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMFileMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BAF1D96426000A3490E /* EMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroup.h; sourceTree = "<group>"; };
+		2D8A4BB01D96426000A3490E /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupManagerDelegate.h; sourceTree = "<group>"; };
+		2D8A4BB11D96426000A3490E /* EMGroupOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupOptions.h; sourceTree = "<group>"; };
+		2D8A4BB21D96426000A3490E /* EMImageMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMImageMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BB31D96426000A3490E /* EMLocationMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocationMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BB41D96426000A3490E /* EMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessage.h; sourceTree = "<group>"; };
+		2D8A4BB51D96426000A3490E /* EMMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BB61D96426000A3490E /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
+		2D8A4BB71D96426000A3490E /* EMOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOptions.h; sourceTree = "<group>"; };
+		2D8A4BB81D96426000A3490E /* EMPushOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPushOptions.h; sourceTree = "<group>"; };
+		2D8A4BB91D96426000A3490E /* EMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDK.h; sourceTree = "<group>"; };
+		2D8A4BBA1D96426000A3490E /* EMSDKFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDKFull.h; sourceTree = "<group>"; };
+		2D8A4BBB1D96426000A3490E /* EMTextMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BBC1D96426000A3490E /* EMVideoMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVideoMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BBD1D96426000A3490E /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceMessageBody.h; sourceTree = "<group>"; };
+		2D8A4BBE1D96426000A3490E /* IEMCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMCallManager.h; sourceTree = "<group>"; };
+		2D8A4BBF1D96426000A3490E /* IEMChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatManager.h; sourceTree = "<group>"; };
+		2D8A4BC01D96426000A3490E /* IEMChatroomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatroomManager.h; sourceTree = "<group>"; };
+		2D8A4BC11D96426000A3490E /* IEMContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMContactManager.h; sourceTree = "<group>"; };
+		2D8A4BC21D96426000A3490E /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
+		2D8A4BC31D96426000A3490E /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
+		2D8A4BC51D96426000A3490E /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
+		2D8A4BC71D96426000A3490E /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		2D8A4BC81D96426000A3490E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D8A4BC91D96426000A3490E /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2D8A4BE01D9644C900A3490E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8A4BE11D9644C900A3490E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D8A4BE61D96551A00A3490E /* FwwAddFirendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwAddFirendViewController.h; sourceTree = "<group>"; };
+		2D8A4BE71D96551A00A3490E /* FwwAddFirendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwAddFirendViewController.m; sourceTree = "<group>"; };
 		2DB487CC1D92A4F800028ECD /* fww聊天app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fww聊天app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DB487D01D92A4F800028ECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DB487D21D92A4F800028ECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2DB487D31D92A4F800028ECD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DB487D51D92A4F800028ECD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2DB487D61D92A4F800028ECD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2DB487D91D92A4F800028ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DB487DB1D92A4F800028ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DB487DE1D92A4F800028ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2DB487E01D92A4F800028ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DB487E51D92A4F800028ECD /* fww聊天appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fww聊天appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB487E91D92A4F800028ECD /* fww__appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fww__appTests.m; sourceTree = "<group>"; };
 		2DB487EB1D92A4F800028ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DB487F01D92A4F800028ECD /* fww聊天appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fww聊天appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB487F41D92A4F800028ECD /* fww__appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fww__appUITests.m; sourceTree = "<group>"; };
 		2DB487F61D92A4F800028ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB488291D92A6BF00028ECD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2DB4882B1D92A6CE00028ECD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2DB4882D1D92A6EA00028ECD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2DB4882F1D92A70000028ECD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2DB4885C1D92A79B00028ECD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2DB4885E1D92A7B600028ECD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2DB488601D92A7CB00028ECD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		2DB488621D92A7D900028ECD /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		2DB488641D92A7EE00028ECD /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		2DB488661D92A7FD00028ECD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2DB488681D92B80100028ECD /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		2DCDBDC31D9AE14D001DFD4E /* FwwSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwSettingViewController.h; sourceTree = "<group>"; };
+		2DCDBDC41D9AE14D001DFD4E /* FwwSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwSettingViewController.m; sourceTree = "<group>"; };
+		2DE9A9821DA53C9200A9F0A8 /* FwwTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FwwTimeCell.h; path = ../../../Xib/FwwTimeCell.h; sourceTree = "<group>"; };
+		2DE9A9831DA53C9200A9F0A8 /* FwwTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FwwTimeCell.m; path = ../../../Xib/FwwTimeCell.m; sourceTree = "<group>"; };
+		2DE9A9861DA5439F00A9F0A8 /* FwwTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwTimeTool.h; sourceTree = "<group>"; };
+		2DE9A9871DA5439F00A9F0A8 /* FwwTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwTimeTool.m; sourceTree = "<group>"; };
+		2DEDD7011D97A9C80049998A /* FwwAddressBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwAddressBookTableViewController.h; sourceTree = "<group>"; };
+		2DEDD7021D97A9C80049998A /* FwwAddressBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwAddressBookTableViewController.m; sourceTree = "<group>"; };
+		2DEDD7071D97B61D0049998A /* FwwAcceptFirendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FwwAcceptFirendViewController.h; path = ../FwwAcceptFirendViewController.h; sourceTree = "<group>"; };
+		2DEDD7081D97B61D0049998A /* FwwAcceptFirendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FwwAcceptFirendViewController.m; path = ../FwwAcceptFirendViewController.m; sourceTree = "<group>"; };
+		2DF8D75A1D9C017200C77A96 /* FwwChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwChatViewController.h; sourceTree = "<group>"; };
+		2DF8D75B1D9C017200C77A96 /* FwwChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwChatViewController.m; sourceTree = "<group>"; };
+		2DF8D75E1D9C1CEF00C77A96 /* FwwChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FwwChatCell.h; sourceTree = "<group>"; };
+		2DF8D75F1D9C1CEF00C77A96 /* FwwChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FwwChatCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +155,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB488691D92B80100028ECD /* libiconv.tbd in Frameworks */,
+				2DB488671D92A7FD00028ECD /* libsqlite3.tbd in Frameworks */,
+				2DB488651D92A7EE00028ECD /* libstdc++.6.0.9.tbd in Frameworks */,
+				2DB488611D92A7CB00028ECD /* libc++.tbd in Frameworks */,
+				2DB4885F1D92A7B600028ECD /* libz.tbd in Frameworks */,
+				2DB4885D1D92A79B00028ECD /* ImageIO.framework in Frameworks */,
+				2DB488301D92A70000028ECD /* MobileCoreServices.framework in Frameworks */,
+				2DB4882E1D92A6EA00028ECD /* AVFoundation.framework in Frameworks */,
+				2DB4882C1D92A6CE00028ECD /* AudioToolbox.framework in Frameworks */,
+				2D8A4BCA1D96426000A3490E /* libHyphenateFullSDK.a in Frameworks */,
+				2DB4882A1D92A6BF00028ECD /* CoreMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +186,163 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D8A4B841D96406600A3490E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B851D96406600A3490E /* AppDelegate.h */,
+				2D8A4B861D96406600A3490E /* AppDelegate.m */,
+			);
+			name = Others;
+			path = Classes/Others;
+			sourceTree = "<group>";
+		};
+		2D8A4B8C1D9640FB00A3490E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B8D1D9640FB00A3490E /* Controller */,
+			);
+			name = Login;
+			path = Classes/Login;
+			sourceTree = "<group>";
+		};
+		2D8A4B8D1D9640FB00A3490E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B8E1D9640FB00A3490E /* FwwLoginViewController.h */,
+				2D8A4B8F1D9640FB00A3490E /* FwwLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D8A4B911D96416800A3490E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2DE9A9851DA5437300A9F0A8 /* Tool */,
+				2DF8D75D1D9C1CB000C77A96 /* View */,
+				2D8A4B921D96416800A3490E /* Controller */,
+			);
+			name = Chat;
+			path = Classes/Chat;
+			sourceTree = "<group>";
+		};
+		2D8A4B921D96416800A3490E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B931D96416800A3490E /* FwwChatTableTableViewController.h */,
+				2D8A4B941D96416900A3490E /* FwwChatTableTableViewController.m */,
+				2DF8D75A1D9C017200C77A96 /* FwwChatViewController.h */,
+				2DF8D75B1D9C017200C77A96 /* FwwChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D8A4B9B1D96426000A3490E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B9C1D96426000A3490E /* HyphenateFullSDK */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		2D8A4B9C1D96426000A3490E /* HyphenateFullSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B9D1D96426000A3490E /* include */,
+				2D8A4BC41D96426000A3490E /* lib */,
+			);
+			path = HyphenateFullSDK;
+			sourceTree = "<group>";
+		};
+		2D8A4B9D1D96426000A3490E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4B9E1D96426000A3490E /* EMCallLocalView.h */,
+				2D8A4B9F1D96426000A3490E /* EMCallManagerDelegate.h */,
+				2D8A4BA01D96426000A3490E /* EMCallRemoteView.h */,
+				2D8A4BA11D96426000A3490E /* EMCallSession.h */,
+				2D8A4BA91D96426000A3490E /* EMContactManagerDelegate.h */,
+				2D8A4BA21D96426000A3490E /* EMChatManagerDelegate.h */,
+				2D8A4BA51D96426000A3490E /* EMClient+Call.h */,
+				2D8A4BA31D96426000A3490E /* EMChatroom.h */,
+				2D8A4BA41D96426000A3490E /* EMChatroomManagerDelegate.h */,
+				2D8A4BA61D96426000A3490E /* EMClient.h */,
+				2D8A4BA71D96426000A3490E /* EMClientDelegate.h */,
+				2D8A4BA81D96426000A3490E /* EMCmdMessageBody.h */,
+				2D8A4BAA1D96426000A3490E /* EMConversation.h */,
+				2D8A4BAB1D96426000A3490E /* EMCursorResult.h */,
+				2D8A4BAC1D96426000A3490E /* EMError.h */,
+				2D8A4BAD1D96426000A3490E /* EMErrorCode.h */,
+				2D8A4BAE1D96426000A3490E /* EMFileMessageBody.h */,
+				2D8A4BAF1D96426000A3490E /* EMGroup.h */,
+				2D8A4BB01D96426000A3490E /* EMGroupManagerDelegate.h */,
+				2D8A4BB11D96426000A3490E /* EMGroupOptions.h */,
+				2D8A4BB21D96426000A3490E /* EMImageMessageBody.h */,
+				2D8A4BB31D96426000A3490E /* EMLocationMessageBody.h */,
+				2D8A4BB41D96426000A3490E /* EMMessage.h */,
+				2D8A4BB51D96426000A3490E /* EMMessageBody.h */,
+				2D8A4BB61D96426000A3490E /* EMOptions+PrivateDeploy.h */,
+				2D8A4BB71D96426000A3490E /* EMOptions.h */,
+				2D8A4BB81D96426000A3490E /* EMPushOptions.h */,
+				2D8A4BB91D96426000A3490E /* EMSDK.h */,
+				2D8A4BBA1D96426000A3490E /* EMSDKFull.h */,
+				2D8A4BBB1D96426000A3490E /* EMTextMessageBody.h */,
+				2D8A4BBC1D96426000A3490E /* EMVideoMessageBody.h */,
+				2D8A4BBD1D96426000A3490E /* EMVoiceMessageBody.h */,
+				2D8A4BBE1D96426000A3490E /* IEMCallManager.h */,
+				2D8A4BBF1D96426000A3490E /* IEMChatManager.h */,
+				2D8A4BC01D96426000A3490E /* IEMChatroomManager.h */,
+				2D8A4BC11D96426000A3490E /* IEMContactManager.h */,
+				2D8A4BC21D96426000A3490E /* IEMGroupManager.h */,
+				2D8A4BC31D96426000A3490E /* OpenGLView20.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2D8A4BC41D96426000A3490E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4BC51D96426000A3490E /* libHyphenateFullSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2D8A4BC61D96426000A3490E /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4BC71D96426000A3490E /* Chat.storyboard */,
+				2D8A4BC81D96426000A3490E /* LaunchScreen.storyboard */,
+				2D8A4BC91D96426000A3490E /* Login.storyboard */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		2D8A4BE41D9654AA00A3490E /* Address list */ = {
+			isa = PBXGroup;
+			children = (
+				2D8A4BE51D9654D500A3490E /* Controller */,
+			);
+			name = "Address list";
+			sourceTree = "<group>";
+		};
+		2D8A4BE51D9654D500A3490E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DEDD7011D97A9C80049998A /* FwwAddressBookTableViewController.h */,
+				2DEDD7021D97A9C80049998A /* FwwAddressBookTableViewController.m */,
+				2D8A4BE61D96551A00A3490E /* FwwAddFirendViewController.h */,
+				2D8A4BE71D96551A00A3490E /* FwwAddFirendViewController.m */,
+				2DEDD7071D97B61D0049998A /* FwwAcceptFirendViewController.h */,
+				2DEDD7081D97B61D0049998A /* FwwAcceptFirendViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		2DB487C31D92A4F800028ECD = {
 			isa = PBXGroup;
 			children = (
+				2D1D96F41D998ADB0006BE9E /* Fwwthinking.m */,
 				2DB487CE1D92A4F800028ECD /* fww聊天app */,
+				2DB4886A1D92B81A00028ECD /* Dependance */,
 				2DB487E81D92A4F800028ECD /* fww聊天appTests */,
 				2DB487F31D92A4F800028ECD /* fww聊天appUITests */,
 				2DB487CD1D92A4F800028ECD /* Products */,
@@ -101,14 +362,12 @@
 		2DB487CE1D92A4F800028ECD /* fww聊天app */ = {
 			isa = PBXGroup;
 			children = (
-				2DB487D21D92A4F800028ECD /* AppDelegate.h */,
-				2DB487D31D92A4F800028ECD /* AppDelegate.m */,
-				2DB487D51D92A4F800028ECD /* ViewController.h */,
-				2DB487D61D92A4F800028ECD /* ViewController.m */,
-				2DB487D81D92A4F800028ECD /* Main.storyboard */,
+				2D8A4B9B1D96426000A3490E /* Lib */,
+				2D8A4BC61D96426000A3490E /* Xib */,
+				2DB488021D92A52700028ECD /* Classes */,
 				2DB487DB1D92A4F800028ECD /* Assets.xcassets */,
-				2DB487DD1D92A4F800028ECD /* LaunchScreen.storyboard */,
-				2DB487E01D92A4F800028ECD /* Info.plist */,
+				2D8A4BE01D9644C900A3490E /* Info.plist */,
+				2D73E6101DAC4DFA0016A8BF /* Images.xcassets */,
 				2DB487CF1D92A4F800028ECD /* Supporting Files */,
 			);
 			path = "fww聊天app";
@@ -117,7 +376,7 @@
 		2DB487CF1D92A4F800028ECD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2DB487D01D92A4F800028ECD /* main.m */,
+				2D8A4BE11D9644C900A3490E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +397,76 @@
 				2DB487F61D92A4F800028ECD /* Info.plist */,
 			);
 			path = "fww聊天appUITests";
+			sourceTree = "<group>";
+		};
+		2DB488021D92A52700028ECD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2DCDBDC01D9AE0F2001DFD4E /* Setting */,
+				2D8A4BE41D9654AA00A3490E /* Address list */,
+				2D8A4B911D96416800A3490E /* Chat */,
+				2D8A4B8C1D9640FB00A3490E /* Login */,
+				2D8A4B841D96406600A3490E /* Others */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2DB4886A1D92B81A00028ECD /* Dependance */ = {
+			isa = PBXGroup;
+			children = (
+				2DB488681D92B80100028ECD /* libiconv.tbd */,
+				2DB488661D92A7FD00028ECD /* libsqlite3.tbd */,
+				2DB488641D92A7EE00028ECD /* libstdc++.6.0.9.tbd */,
+				2DB488621D92A7D900028ECD /* libstdc++.tbd */,
+				2DB488601D92A7CB00028ECD /* libc++.tbd */,
+				2DB4885E1D92A7B600028ECD /* libz.tbd */,
+				2DB4885C1D92A79B00028ECD /* ImageIO.framework */,
+				2DB4882F1D92A70000028ECD /* MobileCoreServices.framework */,
+				2DB4882D1D92A6EA00028ECD /* AVFoundation.framework */,
+				2DB4882B1D92A6CE00028ECD /* AudioToolbox.framework */,
+				2DB488291D92A6BF00028ECD /* CoreMedia.framework */,
+			);
+			name = Dependance;
+			sourceTree = "<group>";
+		};
+		2DCDBDC01D9AE0F2001DFD4E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2DCDBDC11D9AE0FE001DFD4E /* Controller */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		2DCDBDC11D9AE0FE001DFD4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DCDBDC31D9AE14D001DFD4E /* FwwSettingViewController.h */,
+				2DCDBDC41D9AE14D001DFD4E /* FwwSettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2DE9A9851DA5437300A9F0A8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				2DE9A9861DA5439F00A9F0A8 /* FwwTimeTool.h */,
+				2DE9A9871DA5439F00A9F0A8 /* FwwTimeTool.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		2DF8D75D1D9C1CB000C77A96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DF8D75E1D9C1CEF00C77A96 /* FwwChatCell.h */,
+				2DF8D75F1D9C1CEF00C77A96 /* FwwChatCell.m */,
+				2DE9A9821DA53C9200A9F0A8 /* FwwTimeCell.h */,
+				2DE9A9831DA53C9200A9F0A8 /* FwwTimeCell.m */,
+				2D73E60D1DABD6B00016A8BF /* FwwTabBar.h */,
+				2D73E60E1DABD6B00016A8BF /* FwwTabBar.m */,
+			);
+			name = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +531,7 @@
 		2DB487C41D92A4F800028ECD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Fww;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = fengwenwei;
 				TargetAttributes = {
@@ -246,9 +576,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB487DF1D92A4F800028ECD /* LaunchScreen.storyboard in Resources */,
+				2D8A4BCD1D96426000A3490E /* Login.storyboard in Resources */,
+				2D8A4BCB1D96426000A3490E /* Chat.storyboard in Resources */,
+				2D8A4BCC1D96426000A3490E /* LaunchScreen.storyboard in Resources */,
+				2D73E6111DAC4DFA0016A8BF /* Images.xcassets in Resources */,
+				2D8A4BE21D9644C900A3490E /* Info.plist in Resources */,
 				2DB487DC1D92A4F800028ECD /* Assets.xcassets in Resources */,
-				2DB487DA1D92A4F800028ECD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +606,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB487D71D92A4F800028ECD /* ViewController.m in Sources */,
-				2DB487D41D92A4F800028ECD /* AppDelegate.m in Sources */,
-				2DB487D11D92A4F800028ECD /* main.m in Sources */,
+				2D8A4B901D9640FB00A3490E /* FwwLoginViewController.m in Sources */,
+				2DEDD7091D97B61D0049998A /* FwwAcceptFirendViewController.m in Sources */,
+				2D8A4B951D96416900A3490E /* FwwChatTableTableViewController.m in Sources */,
+				2DE9A9841DA53C9200A9F0A8 /* FwwTimeCell.m in Sources */,
+				2D8A4BE31D9644C900A3490E /* main.m in Sources */,
+				2DF8D7601D9C1CEF00C77A96 /* FwwChatCell.m in Sources */,
+				2D8A4B871D96406600A3490E /* AppDelegate.m in Sources */,
+				2DEDD7031D97A9C80049998A /* FwwAddressBookTableViewController.m in Sources */,
+				2DF8D75C1D9C017200C77A96 /* FwwChatViewController.m in Sources */,
+				2D73E60F1DABD6B00016A8BF /* FwwTabBar.m in Sources */,
+				2DE9A9881DA5439F00A9F0A8 /* FwwTimeTool.m in Sources */,
+				2DCDBDC51D9AE14D001DFD4E /* FwwSettingViewController.m in Sources */,
+				2D8A4BE81D96551A00A3490E /* FwwAddFirendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,25 +652,6 @@
 			targetProxy = 2DB487F11D92A4F800028ECD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2DB487D81D92A4F800028ECD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DB487D91D92A4F800028ECD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2DB487DD1D92A4F800028ECD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DB487DE1D92A4F800028ECD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2DB487F71D92A4F800028ECD /* Debug */ = {
@@ -414,8 +738,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "fww聊天app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fww聊天app/HyphenateSDK/lib",
+					"$(PROJECT_DIR)/fww聊天app/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/fww聊天app/Classes/Lib/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/fww聊天app/Lib/HyphenateFullSDK/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -425,8 +761,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "fww聊天app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fww聊天app/HyphenateSDK/lib",
+					"$(PROJECT_DIR)/fww聊天app/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
+					"$(PROJECT_DIR)/fww聊天app/Classes/Lib/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/fww聊天app/Lib/HyphenateFullSDK/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.fww--app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -499,6 +847,7 @@
 				2DB487FB1D92A4F800028ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DB487FC1D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天appTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +856,7 @@
 				2DB487FE1D92A4F800028ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DB487FF1D92A4F800028ECD /* Build configuration list for PBXNativeTarget "fww聊天appUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +865,7 @@
 				2DB488011D92A4F800028ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,15 +14,18 @@
 #import "EMContactManagerDelegate.h"
 //#import "EMClientDelegate.h"
 #import "FwwChatTableTableViewController.h"
+#import "FwwAcceptFirendViewController.h"
 
 
 @interface FwwAddFirendViewController ()<EMContactManagerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *addFriendTextField;
+/**<#注释#> */
+@property (strong, nonatomic) FwwAcceptFirendViewController *userId;
 
 
 @end
 
-@implementation FwwAddressListViewController
+@implementation FwwAddFirendViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +33,9 @@
       [ [EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
 //    [ [EMClient sharedClient].contactManager removeDelegate:self];
     // Do any additional setup after loading the view.
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:20/255.0 green:155/255.0 blue:213/255.0 alpha:1] ];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] ];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,19 +69,16 @@
     });
     }
 
+//- (IBAction)informMessage:(id)sender {
+//    self.userId = [ [FwwAcceptFirendViewController alloc] init];
+//    self.userId = [ [self storyboard] instantiateViewControllerWithIdentifier:@"accept"];
+//    self.userId.userName = self.userName;
+//    NSLog(@"%@",self.userId.userName);
+//    [ [self navigationController] pushViewController:self.userId animated:YES];
+//
+//    
+//    
+//    
+//}
 
-- (IBAction)aggreeAddFriendAction:(id)sender {
-    EMError *error = [ [EMClient sharedClient].contactManager acceptInvitationForUsername:self.userName];
-    if (!error) {
-        NSLog(@"同意添加好友成功");
-    }
-}
-
-- (IBAction)rejectAddFirendAction:(id)sender {
-    EMError *error = [ [EMClient sharedClient].contactManager declineInvitationForUsername:self.userName];
-    if (!error) {
-        NSLog(@"拒绝添加好友成功");
-    }
-    
-}
 @end

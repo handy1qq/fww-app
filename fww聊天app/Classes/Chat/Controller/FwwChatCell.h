@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EMMessage.h"
+static NSString *ReceverCell = @"ReceverCell";
+static NSString *SenderCell = @"SenderCell";
 
 @interface FwwChatCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
+/**<#注释#> */
+@property (strong, nonatomic) EMMessage *message;
+
+
+
+- (CGFloat)cellHeight;
 @end

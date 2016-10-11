@@ -7,8 +7,11 @@
 //
 
 #import "FwwAcceptFirendViewController.h"
+#import "EMClient.h"
+#import "IEMContactManager.h"
 
-@interface FwwAcceptFirendViewController ()
+
+@interface FwwAcceptFirendViewController ()<EMContactManagerDelegate>
 
 @end
 
@@ -16,13 +19,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"!!!!%@",self.userName);
+    [ [EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:20/255.0 green:155/255.0 blue:213/255.0 alpha:1] ];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] ];
+
     // Do any additional setup after loading the view.
+}
+
+-(void)dealloc {
+    [ [EMClient sharedClient].contactManager removeDelegate:self];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)aggreeAddFriendAction:(id)sender {
+    EMError *error = [ [EMClient sharedClient].contactManager acceptInvitationForUsername:self.userName];
+    if (!error) {
+        NSLog(@"同意添加好友成功");
+    }
+}
+
+- (IBAction)rejectAddFirendAction:(id)sender {
+    EMError *error = [ [EMClient sharedClient].contactManager declineInvitationForUsername:self.userName];
+    if (!error) {
+        NSLog(@"拒绝添加好友成功");
+    }
+    
+}
+
 
 /*
 #pragma mark - Navigation

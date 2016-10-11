@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DA240330F6CCBBAE8D293BA26BB9B2FF4652273B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DA240330F6CCBBAE8D293BA26BB9B2FF4652273B" : 0,
+    "46B6C4CBCF986EE610BDC169963193303DC7AEA9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "141F89B0-6014-4BD9-8C32-693226AF06EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DA240330F6CCBBAE8D293BA26BB9B2FF4652273B" : "fww%E8%81%8A%E5%A4%A9app\/",
+    "46B6C4CBCF986EE610BDC169963193303DC7AEA9" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fww聊天app",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fww聊天app.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/handy1qq\/fww-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46B6C4CBCF986EE610BDC169963193303DC7AEA9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/handy1qq\/fww-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA240330F6CCBBAE8D293BA26BB9B2FF4652273B"
+    }
+  ]
+}

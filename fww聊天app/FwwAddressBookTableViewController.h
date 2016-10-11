@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FwwAddressBookTableViewController : UITableViewController
+@property (strong, nonatomic) NSString *userName;
+/**<#注释#> */
+@property (strong, nonatomic) NSString *friendName;
+
 
 @end

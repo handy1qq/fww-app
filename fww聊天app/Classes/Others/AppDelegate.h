@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+/** 用户名 */
+@property (strong, nonatomic) NSString *toFriend;
+
 
 @end
 

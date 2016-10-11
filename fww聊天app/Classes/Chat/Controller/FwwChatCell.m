@@ -7,17 +7,38 @@
 //
 
 #import "FwwChatCell.h"
+#import "EMTextMessageBody.h"
 
 @implementation FwwChatCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)setMessage:(EMMessage *)message {
+    _message = message;
+    id body = message.body;
+    if ( [body isKindOfClass:[EMTextMessageBody class] ] ) {
+        EMTextMessageBody *textBody = body;
+        self.messageLabel.text = textBody.text;
+    } else  {
+        self.messageLabel.text = @"未知消息";
+    }
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+- (CGFloat)cellHeight {
+  //  [self layoutIfNeeded];
+    CGRect frame = [self frame];
+     self.messageLabel.numberOfLines = 10;
+    CGSize size = CGSizeMake(300, 1000);
+    NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:13]};
+    CGSize labelSize = [self.messageLabel.text boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
+                        
+    self.messageLabel.frame = CGRectMake(self.messageLabel.frame.origin.x, self.messageLabel.frame.origin.y, labelSize.width, labelSize.height);
+    frame.size.height = labelSize.height+85;
+    self.frame = frame;
+
+   // NSLog(@"!!!!!!!!!!!!%f",self.messageLabel.bounds.size.height);
+    return (frame.size.height);
+//    return (19 + rect.size.height + 10);
+
 }
 
 @end

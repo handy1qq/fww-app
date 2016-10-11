@@ -10,4 +10,7 @@
 
 @interface FwwAcceptFirendViewController : UIViewController
 
+/**user */
+@property (strong, nonatomic) NSString *userName;
+
 @end
