@@ -26,10 +26,10 @@
 
 ## 工程中的picture文件夹就是实物效果图
 
-  登录动画：fww聊天app/fww-app/picture/login.png)
+  登录动画:
   
-  ![](https://github.com/handy1qq/fww聊天app/raw/master/fww-app/picture/login.png)
-  ![image](https://github.com/handy1qq/fww-app/fww聊天app/picture/login.png)
+
+  ![image](https://github.com/handy1qq/fww-app/picture/login.png)
 
  ![image](https://github.com/handy1qq/fww-app/picture/app.png)
 
