@@ -27,7 +27,7 @@
 ## 工程中的picture文件夹就是实物效果图
 
   登录动画：
-  
+  ![image](https://github.com/handy1qq/fww-app/picture/login.png)
 
  ![image](https://github.com/handy1qq/fww-app/picture/app.png)
 
