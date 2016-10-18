@@ -21,16 +21,20 @@
 
 >> e.EMChatroomManager: 负责聊天室的管理。
 
+
 ## 实物效果图：
 
 ## 工程中的picture文件夹就是实物效果图
 
-![image](https://github.com/handy1qq/fww-app/picture/app.png)
+  登录动画：
+  
 
-![image](https://github.com/handy1qq/fww-app/picture/addfriend.png)
+ ![image](https://github.com/handy1qq/fww-app/picture/app.png)
 
-![image](https://github.com/handy1qq/fww-app/picture/chat.png)
+ ![image](https://github.com/handy1qq/fww-app/picture/addfriend.png)
 
-![image](https://github.com/handy1qq/fww-app/picture/chating.png)
+ ![image](https://github.com/handy1qq/fww-app/picture/chat.png)
 
-![image](https://github.com/handy1qq/fww-app/picture/login.png)
+ ![image](https://github.com/handy1qq/fww-app/picture/chating.png)
+
+ ![image](https://github.com/handy1qq/fww-app/picture/login.png)
