@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef NS_ENUM(NSInteger,LogInShowType) {
+    LogInShowType_NONE,
+    LogInShowType_USER,
+    LogInShowType_PASS
+} ;
 @interface FwwLoginViewController : UIViewController
 
 @end

@@ -16,7 +16,11 @@
 
 
 
-@interface FwwLoginViewController ()<UITextFieldDelegate,EMClientDelegate>
+@interface FwwLoginViewController ()<UITextFieldDelegate,EMClientDelegate> {
+    LogInShowType showType;
+}
+
+
 @property (weak, nonatomic) IBOutlet UITextField *userNameField;
 @property (weak, nonatomic) IBOutlet UITextField *passWordField;
 
@@ -29,6 +33,20 @@
 @property (strong, nonatomic) IBOutlet UIButton *logIn;
 
 @property (strong, nonatomic) IBOutlet UIButton *registerB;
+
+@property (strong, nonatomic) IBOutlet UIImageView *left;
+@property (strong, nonatomic) IBOutlet UIImageView *right;
+
+@property (strong, nonatomic) IBOutlet UIImageView *leftHand;
+@property (strong, nonatomic) IBOutlet UIImageView *rightHand;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *leftHandPositionX;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *leftHandPositionY;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *rightHandPositionX;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *rightHandPositionY;
+@property (strong, nonatomic) IBOutlet UIView *hand;
+
+
+
 @end
 
 @implementation FwwLoginViewController
@@ -40,6 +58,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     [self initView];
     self.userNameField.delegate = self;
     self.passWordField.delegate = self;
     self.passWordField.secureTextEntry = YES;
@@ -51,6 +70,18 @@
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"] ];
 }
+
+- (void)initView {
+    self.hand.layer.masksToBounds = YES;
+    
+    //[self.hand layoutIfNeeded];
+    self.leftHandPositionX.constant += 50;
+    self.leftHandPositionY.constant -= 50;
+    
+    self.rightHandPositionX.constant += 50;
+    self.rightHandPositionY.constant += 50;
+}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
@@ -143,16 +174,59 @@
         });
 
         });
-        
     }
 }
-
-
-
 
 - (void)titlestring:(NSString *)titlestring messagestring: (NSString *)messagestring surestring: (NSString *)surestring {
     UIAlertView *alert = [ [UIAlertView alloc] initWithTitle:titlestring message:messagestring delegate:self cancelButtonTitle:nil otherButtonTitles:surestring, nil];
     [alert show];
     
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    
+    if ( [textField isEqual:self.userNameField] ) {
+        if (showType != LogInShowType_PASS ) {
+            showType = LogInShowType_USER;
+            return;
+        }
+        showType = LogInShowType_USER;
+        [UIView animateWithDuration:1.0 animations:^{
+            
+            self.leftHandPositionX.constant += 50;
+            self.leftHandPositionY.constant -= 50;
+            
+            self.rightHandPositionX.constant += 50;
+            self.rightHandPositionY.constant += 50;
+            
+            self.left.frame = CGRectMake(self.left.frame.origin.x - 100, self.left.frame.origin.y , 50, 30);
+            self.right.frame = CGRectMake(self.right.frame.origin.x + 100, self.right.frame.origin.y , 50, 30);
+            
+            [self.hand layoutIfNeeded];
+        }];
+        
+    } else if ( [textField isEqual:self.passWordField] ) {
+        if (showType == LogInShowType_PASS) {
+            showType = LogInShowType_PASS;
+            return;
+        }
+        showType = LogInShowType_PASS;
+        [UIView animateWithDuration:1.0 animations:^{
+            
+            self.leftHandPositionX.constant -= 50;
+            self.leftHandPositionY.constant += 50;
+            
+            self.rightHandPositionX.constant -= 50;
+            self.rightHandPositionY.constant -= 50;
+            
+            self.left.frame = CGRectMake(self.left.frame.origin.x + 100, self.left.frame.origin.y , 0, 0);
+            self.right.frame = CGRectMake(self.right.frame.origin.x - 100, self.right.frame.origin.y, 0, 0);
+            
+            [self.hand layoutIfNeeded];
+        }];
+
+    }
+}
+
 @end
